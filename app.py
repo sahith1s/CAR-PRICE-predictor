@@ -6,21 +6,31 @@ from db.Connection import Connection
 
 import pickle
 import os
-f = open("C:\\Users\\Sahith\\Desktop\\flask_proj\\ml\\car_api.json")
+global conn
+
+curr_path = os.path.abspath(__file__)
+parent_dir = os.path.dirname
+parent_path = parent_dir(curr_path)
+# f = open("C:\\Users\\Sahith\\Desktop\\flask_proj\\ml\\car_api.json")
+car_api = f"{parent_path}/ml/car_api.json"
+f = open(car_api)
 images = json.load(f)
 details = []
-model = pickle.load(open(
-    "C:\\Users\\Sahith\\Desktop\\flask_proj\\ml\\LinearRegressionModel.pkl", "rb"))
+# model = pickle.load(open(
+#     "C:\\Users\\Sahith\\Desktop\\flask_proj\\ml\\LinearRegressionModel.pkl", "rb"))
+pickel_path = f"{parent_path}/ml/LinearRegressionModel.pkl"
+model = pickle.load(open(pickel_path, "rb"))
 app = Flask(__name__)
 # key in server and cookie until and unless seckret_key in server  session valids else session expires
 app.secret_key = os.urandom(24)
-global conn
 # -------------Supporting methods------------
 
 
 # ---------------------APIs-------------------
-car = pd.read_csv(
-    'C:\\Users\\Sahith\\Desktop\\flask_proj\\ml\\Cleaned_car.csv')
+csv_path = f"{parent_path}/ml/Cleaned_car.csv"
+# car = pd.read_csv(
+#     'C:\\Users\\Sahith\\Desktop\\flask_proj\\ml\\Cleaned_car.csv')
+car = pd.read_csv(csv_path)
 
 
 @app.route('/')
@@ -135,4 +145,4 @@ if __name__ == "__main__":
     # global conn
     conn = Connection()
 
-    app.run(debug=True)
+    app.run(debug=True, host='0.0.0.0', port=5000)
