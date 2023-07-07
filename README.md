@@ -9,7 +9,7 @@ The application is a web-based solution that utilizes input details, including c
 
 ## Access
 
-You can access the project [here](http://ec2-16-170-216-13.eu-north-1.compute.amazonaws.com:5002/){:target="_blank"}.
+You can access the project [here](http://ec2-16-170-216-13.eu-north-1.compute.amazonaws.com:5002/{:target="_blank"}).
 
 Note:
 - This repository also contains the Dockerfile used for containerization of the project.
