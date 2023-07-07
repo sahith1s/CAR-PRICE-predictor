@@ -1,17 +1,20 @@
-# CAR-PRICE PREDICTOR
-The application is a web-based solution that utilizes input details, including car type, model, year of manufacture, and kilometers driven, to accurately predict the price of a car.
+# Car Price Predictor
+
+The Car Price Predictor is a web-based application that accurately predicts the price of a car based on input details such as car type, model, year of manufacture, and kilometers driven.
+
 ## Technologies Used
 
-- Web Languages: HTML, CSS ,(a bit JS & bootstrap)
-- Language: Python
-- Backend Framework: Flask
-- ML Algorithm: Linear Regression (Supervised machine learning algorithm)
+- Web Languages: HTML, CSS (bit JS & bootstrap)
+- Language:Python
+- Backend Framework: FLASk
+- Machine Learning Algorithm: Linear Regression (Supervised Learning)
 
-## Access
+## Access the Application
 
-You can access the project [here](http://ec2-16-170-216-13.eu-north-1.compute.amazonaws.com:5002/).
+You can access the Car Price Predictor application [here](http://ec2-16-170-216-13.eu-north-1.compute.amazonaws.com:5002/). 
 
-Note:
-- This repository also contains the Dockerfile used for containerization of the project.
-- The `requirements.txt` file is used for Dockerization.
+## Repository Information
 
+This repository contains the source code for the Car Price Predictor application. It also includes the Dockerfile used for containerization and the requirements.txt file for Dockerization.
+
+Feel free to explore the code and customize the application as needed.
