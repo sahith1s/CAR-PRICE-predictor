@@ -11,7 +11,7 @@ The Car Price Predictor is a web-based application that accurately predicts the 
 
 ## Access the Application
 
-You can access the Car Price Predictor application [here](http://ec2-16-170-216-13.eu-north-1.compute.amazonaws.com:5002/). 
+You can access the Car Price Predictor application [here](http://ec2-16-170-15-151.eu-north-1.compute.amazonaws.com:5000/). 
 
 ## Repository Information
 
